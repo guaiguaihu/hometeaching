@@ -1,10 +1,11 @@
 package com.sida.entity;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 @Table(name = "ht_teacher")
-public class Teacher {
+public class Teacher extends OptEntity {
     @Id
     @GeneratedValue
     private Integer id;
@@ -239,4 +240,5 @@ public class Teacher {
     public void setRemark(String remark) {
         this.remark = remark;
     }
+
 }

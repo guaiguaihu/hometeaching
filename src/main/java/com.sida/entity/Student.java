@@ -1,13 +1,14 @@
 package com.sida.entity;
 
 import javax.persistence.*;
+import java.util.Date;
 
 /**
  * 学员实体类
  */
 @Entity
 @Table(name = "ht_student")
-public class Student {
+public class Student  extends OptEntity{
     @Id
     @GeneratedValue
     private Integer id; //主键 自增

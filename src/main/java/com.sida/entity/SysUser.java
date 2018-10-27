@@ -7,10 +7,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.util.Date;
 
 
 @Entity
-public class SysUser {
+public class SysUser  extends  OptEntity{
     @Id
     @GeneratedValue
     private Integer id; //主键 自增
@@ -62,4 +63,5 @@ public class SysUser {
     public void setUserType(String userType) {
         this.userType = userType;
     }
+
 }
